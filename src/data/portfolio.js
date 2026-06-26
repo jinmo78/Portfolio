@@ -1,8 +1,8 @@
 export const site = {
-  name: '홍길동',
+  name: '강진모',
   role: 'Full-Stack Developer',
   tagline: 'SI 웹 개발과 개인 프로젝트를 병행하는 풀스택 개발자',
-  email: 'hello@example.com',
+  email: 'ilovejs97@gmail.com',
   github: 'https://github.com/yourname',
   linkedin: 'https://linkedin.com/in/yourname',
 }
@@ -10,8 +10,8 @@ export const site = {
 export const navItems = [
   { id: 'intro', label: '소개' },
   { id: 'tech', label: '기술스택' },
-  { id: 'experience', label: '회사경력' },
   { id: 'projects', label: '프로젝트' },
+  { id: 'experience', label: '경력' },
   { id: 'contact', label: '연락처' },
 ]
 

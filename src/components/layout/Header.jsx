@@ -5,21 +5,25 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 border-b border-zinc-800/80 bg-zinc-950/80 backdrop-blur-md">
-      <div className="mx-auto flex h-16 max-w-5xl items-center justify-between px-6">
+    <header className="sticky top-0 z-50 border-b border-slate-800/60 bg-slate-900/60 backdrop-blur-md">
+      <div className="mx-auto flex h-14 max-w-4xl items-center justify-between px-5 sm:px-6">
         <a
           href="#intro"
-          className="font-mono text-sm font-medium text-emerald-400 transition hover:text-emerald-300"
+          className="group flex items-center gap-2 font-mono text-sm"
         >
-          &lt;{site.name} /&gt;
+          <span className="text-sky-400 transition group-hover:text-sky-300">&lt;</span>
+          <span className="font-medium text-slate-200 transition group-hover:text-emerald-400">
+            {site.name}
+          </span>
+          <span className="text-sky-400 transition group-hover:text-sky-300">/&gt;</span>
         </a>
 
-        <nav className="hidden items-center gap-8 md:flex">
+        <nav className="hidden items-center gap-1 md:flex">
           {navItems.map((item) => (
             <a
               key={item.id}
               href={`#${item.id}`}
-              className="text-sm text-zinc-400 transition hover:text-zinc-100"
+              className="rounded-md px-3 py-1.5 text-sm text-slate-400 transition hover:bg-slate-800/60 hover:text-emerald-400"
             >
               {item.label}
             </a>
@@ -28,7 +32,7 @@ export default function Header() {
 
         <button
           type="button"
-          className="rounded-md p-2 text-zinc-400 transition hover:bg-zinc-800 hover:text-zinc-100 md:hidden"
+          className="rounded-md p-2 text-slate-400 transition hover:bg-slate-800/60 hover:text-sky-400 md:hidden"
           onClick={() => setIsOpen((prev) => !prev)}
           aria-label="메뉴 열기"
           aria-expanded={isOpen}
@@ -44,13 +48,13 @@ export default function Header() {
       </div>
 
       {isOpen && (
-        <nav className="border-t border-zinc-800 bg-zinc-950 px-6 py-4 md:hidden">
-          <ul className="flex flex-col gap-3">
+        <nav className="border-t border-slate-800/60 bg-slate-900/80 px-5 py-3 backdrop-blur-md md:hidden">
+          <ul className="flex flex-col gap-1">
             {navItems.map((item) => (
               <li key={item.id}>
                 <a
                   href={`#${item.id}`}
-                  className="block py-1 text-sm text-zinc-400 transition hover:text-zinc-100"
+                  className="block rounded-md px-3 py-2 text-sm text-slate-400 transition hover:bg-slate-800/60 hover:text-emerald-400"
                   onClick={() => setIsOpen(false)}
                 >
                   {item.label}
