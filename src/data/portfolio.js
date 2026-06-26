@@ -76,6 +76,7 @@ export const projects = [
   {
     title: 'Flutter 모바일 앱',
     category: 'Flutter',
+    categoryLabel: 'FLUTTER APP',
     description: '크로스 플랫폼 일정 관리 앱. Firebase 연동 및 로컬 알림 구현.',
     tech: ['Flutter', 'Dart', 'Firebase'],
     link: '#',
@@ -84,6 +85,7 @@ export const projects = [
   {
     title: 'Godot 2D 게임',
     category: 'Godot',
+    categoryLabel: 'GODOT GAME',
     description: '타일맵 기반 퍼즐 게임. 씬 트리 구조와 상태 머신 패턴 적용.',
     tech: ['Godot 4', 'GDScript'],
     link: '#',
@@ -92,6 +94,7 @@ export const projects = [
   {
     title: 'React 포트폴리오',
     category: 'React',
+    categoryLabel: 'REACT WEBAPP',
     description: 'Tailwind CSS 기반 다크모드 개발자 포트폴리오 웹사이트.',
     tech: ['React', 'Vite', 'Tailwind CSS'],
     link: '#',
