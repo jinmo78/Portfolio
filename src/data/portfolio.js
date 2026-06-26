@@ -1,10 +1,14 @@
 export const site = {
   name: '강진모',
   role: 'Full-Stack Developer',
-  tagline: 'SI 웹 개발과 개인 프로젝트를 병행하는 풀스택 개발자',
+  identityLead: '플랫폼을 넘나드는 솔루션 빌더,',
+  identityTail: '개발자',
+  tagline:
+    'SI 웹부터 Flutter 앱, Godot 게임, React 웹앱까지 — 비즈니스와 사용자 경험을 잇는 코드를 만듭니다.',
   email: 'ilovejs97@gmail.com',
   github: 'https://github.com/yourname',
   linkedin: 'https://linkedin.com/in/yourname',
+  profileImage: null,
 }
 
 export const navItems = [
@@ -13,6 +17,21 @@ export const navItems = [
   { id: 'projects', label: '프로젝트' },
   { id: 'experience', label: '경력' },
   { id: 'contact', label: '연락처' },
+]
+
+export const skillBadges = [
+  { name: 'React', accent: 'emerald' },
+  { name: 'Next.js', accent: 'sky' },
+  { name: 'Flutter', accent: 'sky' },
+  { name: 'Dart', accent: 'sky' },
+  { name: 'Godot', accent: 'emerald' },
+  { name: 'GDScript', accent: 'emerald' },
+  { name: 'PHP', accent: 'emerald' },
+  { name: 'MariaDB', accent: 'emerald' },
+  { name: 'JavaScript', accent: 'sky' },
+  { name: 'Tailwind CSS', accent: 'sky' },
+  { name: 'Node.js', accent: 'emerald' },
+  { name: 'Git', accent: 'sky' },
 ]
 
 export const techStack = [

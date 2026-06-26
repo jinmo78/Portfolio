@@ -5,7 +5,7 @@ export default function Footer() {
 
   return (
     <footer className="border-t border-slate-800/50 py-6">
-      <div className="mx-auto flex max-w-4xl flex-col items-center justify-between gap-3 px-5 text-xs text-slate-500 sm:flex-row sm:px-6">
+      <div className="mx-auto flex max-w-5xl flex-col items-center justify-between gap-3 px-5 text-xs text-slate-500 sm:flex-row sm:px-6">
         <p>
           &copy; {year}{' '}
           <span className="text-slate-400">{site.name}</span>

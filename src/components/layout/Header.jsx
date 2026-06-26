@@ -6,7 +6,7 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-slate-800/60 bg-slate-900/60 backdrop-blur-md">
-      <div className="mx-auto flex h-14 max-w-4xl items-center justify-between px-5 sm:px-6">
+      <div className="mx-auto flex h-14 max-w-5xl items-center justify-between px-5 sm:px-6">
         <a
           href="#intro"
           className="group flex items-center gap-2 font-mono text-sm"

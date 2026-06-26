@@ -13,7 +13,7 @@ function App() {
       <GlowBackground />
       <Header />
 
-      <main className="mx-auto max-w-4xl px-5 sm:px-6">
+      <main className="mx-auto max-w-5xl px-5 sm:px-6">
         <div id="intro">
           <Intro />
         </div>
