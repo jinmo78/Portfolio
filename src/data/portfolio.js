@@ -57,18 +57,30 @@ export const experiences = [
   {
     company: 'OO SI 업체',
     role: '웹 개발자',
+    sector: 'SI',
     period: '2022 — 현재',
     description:
-      'PHP·MariaDB 기반 웹 서비스 유지보수 및 신규 기능 개발. 레거시 코드 리팩토링과 API 연동 경험.',
-    highlights: ['사내 관리 시스템 개발', '레거시 PHP 모듈화', 'MariaDB 쿼리 최적화'],
+      'PHP·MariaDB 기반 웹 서비스 유지보수 및 신규 기능 개발. 레거시 코드 리팩토링과 API 연동을 담당했습니다.',
+    highlights: [
+      '사내 관리 시스템 신규 모듈 설계 및 개발',
+      '레거시 PHP 코드 모듈화 및 유지보수성 개선',
+      'MariaDB 쿼리 최적화로 목록 조회 성능 개선',
+    ],
+    tech: ['PHP 8.4', 'MariaDB', 'JavaScript', 'Linux'],
   },
   {
     company: 'XX IT 회사',
     role: '주니어 개발자',
+    sector: 'SI',
     period: '2020 — 2022',
     description:
-      '고객사 웹 프로젝트 참여. 요구사항 분석부터 배포까지 전 과정 경험.',
-    highlights: ['반응형 웹 퍼블리싱', 'PHP 백엔드 API 개발', '크로스 브라우저 대응'],
+      '고객사 웹 프로젝트에 참여하며 요구사항 분석부터 배포까지 전 과정을 경험했습니다.',
+    highlights: [
+      '반응형 웹 퍼블리싱 및 크로스 브라우저 대응',
+      'PHP 기반 백엔드 API 개발 및 연동',
+      '고객사 요구사항 기반 기능 구현 및 배포 지원',
+    ],
+    tech: ['PHP', 'MariaDB', 'HTML/CSS', 'jQuery'],
   },
 ]
 
