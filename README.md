@@ -15,6 +15,16 @@ npm run dev
 
 - **Live:** https://jinmo78.github.io/Portfolio/
 
+### 최초 1회 설정 (필수)
+
+404가 나오면 아래 설정이 빠진 경우입니다.
+
+1. [Settings → Pages](https://github.com/jinmo78/Portfolio/settings/pages) 이동
+2. **Build and deployment** → **Source**를 **GitHub Actions**로 선택
+3. [Actions](https://github.com/jinmo78/Portfolio/actions) 탭에서 실패한 워크플로우 **Re-run all jobs** 클릭
+
+배포 완료까지 1~3분 정도 걸릴 수 있습니다.
+
 ## 기술 스택
 
 - React 19
