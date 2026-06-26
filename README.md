@@ -1,16 +1,26 @@
-# React + Vite
+# Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+React + Tailwind CSS 기반 개발자 포트폴리오 웹사이트입니다.
 
-Currently, two official plugins are available:
+## 로컬 실행
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+```bash
+npm install
+npm run dev
+```
 
-## React Compiler
+## 배포
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+`main` 브랜치에 push하면 GitHub Actions가 자동으로 GitHub Pages에 배포합니다.
 
-## Expanding the Oxlint configuration
+- **Live:** https://jinmo78.github.io/Portfolio/
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## 기술 스택
+
+- React 19
+- Vite 8
+- Tailwind CSS 4
+
+## 콘텐츠 수정
+
+`src/data/portfolio.js`에서 이름, 경력, 프로젝트 정보를 수정할 수 있습니다.
