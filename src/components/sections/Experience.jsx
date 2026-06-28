@@ -15,9 +15,9 @@ function CheckIcon() {
   )
 }
 
-function ExperienceItem({ job, isLast }) {
+function ExperienceItem({ job }) {
   return (
-    <article className={`relative pl-8 ${isLast ? '' : 'pb-12'}`}>
+    <article className="relative pb-10 pl-8 last:pb-2">
       <span className="absolute top-1.5 left-0 h-3.5 w-3.5 -translate-x-[calc(50%+1px)] rounded-full border-2 border-emerald-400/60 bg-[#0b0f19] shadow-[0_0_10px_rgba(52,211,153,0.35)]" />
 
       <div className="grid gap-6 md:grid-cols-[11rem_1fr] lg:grid-cols-[13rem_1fr] lg:gap-10">
@@ -67,17 +67,15 @@ export default function Experience() {
         id="experience"
         label="03 — Experience"
         title="회사 경력"
-        description="SI 업체에서의 웹 개발 경험입니다."
+        description="총 14년+ 웹 개발 경력입니다. 아래 영역에서 스크롤하여 전체 경력을 확인할 수 있습니다."
       />
 
-      <div className="relative border-l-2 border-slate-800">
-        {experiences.map((job, index) => (
-          <ExperienceItem
-            key={`${job.company}-${job.period}`}
-            job={job}
-            isLast={index === experiences.length - 1}
-          />
-        ))}
+      <div className="experience-scroll max-h-[28rem] overflow-y-auto overscroll-y-contain pr-1 sm:max-h-[32rem]">
+        <div className="relative border-l-2 border-slate-800">
+          {experiences.map((job) => (
+            <ExperienceItem key={`${job.company}-${job.period}`} job={job} />
+          ))}
+        </div>
       </div>
     </section>
   )
