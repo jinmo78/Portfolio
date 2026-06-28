@@ -58,11 +58,10 @@ export const experiences = [
     role: '개발팀 수석연구원',
     sector: 'WEB',
     period: '2020.07 — 현재',
-    description: '사이트 운영·개발 및 서버 관리를 담당하며 ASP·PHP·JSP 기반 웹 서비스를 유지보수합니다.',
+    description: '시스템 및 사이트 운영·개발 및 서버 관리를 담당하며 서비스를 유지보수합니다.',
     highlights: [
-      '고객사 웹사이트 운영 및 기능 개발',
-      'Windows 서버 환경 운영·관리',
-      'MySQL·MS-SQL 데이터베이스 연동 및 유지보수',
+      'Windows 및 Linux 서버 환경 운영·관리',
+      'Oracle, MariaDB, MySQL, MS-SQL 데이터베이스 연동 및 유지보수',
     ],
     tech: [
       'ASP',
@@ -77,6 +76,7 @@ export const experiences = [
       'FastAPI',
       'Flutter',
       'Dart',
+      'Oracle',
       'MySQL',
       'MS-SQL',
       'MariaDB',
@@ -102,7 +102,7 @@ export const experiences = [
     period: '2018.04 — 2019.04',
     description: '쇼핑몰 구축·운영과 Windows 서버 세팅·운영을 담당했습니다.',
     highlights: ['쇼핑몰 구축 및 운영', 'Windows 서버 환경 구성·관리'],
-    tech: ['ASP', 'PHP', 'MySQL', 'Windows Server'],
+    tech: ['ASP', 'PHP', 'MySQL', 'Windows Server', 'Wowza', 'WebRTC'],
   },
   {
     company: '더이엔엠',
@@ -114,7 +114,7 @@ export const experiences = [
       '팝콘티비 홈페이지 리뉴얼 및 운영',
       '셀럽티비 신규 런칭·리뉴얼 및 운영',
     ],
-    tech: ['Classic ASP', 'MS-SQL', 'Windows'],
+    tech: ['Classic ASP', 'MS-SQL', 'Windows', 'Wowza', 'WebRTC'],
   },
   {
     company: '애드캡슐소프트',
@@ -146,6 +146,15 @@ export const experiences = [
     description: 'Classic ASP·MS-SQL 기반 회사 홈페이지 신규 개발 및 운영을 담당했습니다.',
     highlights: ['홈페이지 신규 개발', '콘텐츠·채널 관리 및 사이트 운영'],
     tech: ['Classic ASP', 'MS-SQL'],
+  },
+  {
+    company: '프리랜서',
+    role: '웹개발자',
+    sector: 'FREELANCE',
+    period: '2007.04 — 2008.02',
+    description: 'Classic ASP·PHP로 쇼핑몰 및 기업 사이트 신규 개발·유지보수 업무를 수행했습니다.',
+    highlights: ['쇼핑몰 신규 개발', '기업 홈페이지 구축 및 유지보수'],
+    tech: ['Classic ASP', 'PHP', 'MySQL'],
   },
   {
     company: '비바빅스',

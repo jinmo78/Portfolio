@@ -37,8 +37,8 @@ function ProfileAvatar() {
 
 export default function Intro() {
   return (
-    <section className="flex min-h-[calc(100vh-3.5rem)] items-center py-14 sm:py-16">
-      <div className="grid w-full items-center gap-12 lg:grid-cols-[1.15fr_auto] lg:gap-16">
+    <section className="flex min-h-[calc(100vh-3.5rem)] items-center py-10 sm:py-12 lg:min-h-0 lg:items-start lg:py-8">
+      <div className="grid w-full items-center gap-10 lg:grid-cols-[1.15fr_auto] lg:items-start lg:gap-12">
         <div className="order-2 lg:order-1">
           <h1 className="text-3xl font-bold tracking-tight text-slate-50 sm:text-4xl lg:text-[2.75rem] lg:leading-[1.2]">
             <span className="block text-slate-400">{site.identityLead}</span>
@@ -80,7 +80,7 @@ export default function Intro() {
           </div>
         </div>
 
-        <div className="order-1 flex justify-center lg:order-2 lg:justify-end">
+        <div className="order-1 flex justify-center lg:order-2 lg:justify-end lg:pt-1">
           <ProfileAvatar />
         </div>
       </div>
