@@ -40,7 +40,7 @@ export default function Intro() {
     <section className="flex min-h-[calc(100vh-3.5rem)] items-center py-10 sm:py-12 lg:min-h-0 lg:items-start lg:py-8">
       <div className="grid w-full items-center gap-10 lg:grid-cols-[1.15fr_auto] lg:items-start lg:gap-12">
         <div className="order-2 lg:order-1">
-          <h1 className="text-3xl font-bold tracking-tight text-slate-50 sm:text-4xl lg:text-[2.75rem] lg:leading-[1.2]">
+          <h1 className="text-[1.625rem] font-bold tracking-tight text-slate-50 sm:text-4xl lg:text-[2.75rem] lg:leading-[1.2]">
             <span className="block text-slate-400">{site.identityLead}</span>
             <span className="mt-1 block">
               {site.identityTail}{' '}
