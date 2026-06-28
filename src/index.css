@@ -70,6 +70,7 @@ body {
 .experience-scroll {
   scrollbar-width: thin;
   scrollbar-color: rgb(51 65 85) transparent;
+  overscroll-behavior-y: auto;
 }
 
 .experience-scroll::-webkit-scrollbar {

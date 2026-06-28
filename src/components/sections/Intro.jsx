@@ -37,8 +37,8 @@ function ProfileAvatar() {
 
 export default function Intro() {
   return (
-    <section className="py-10 sm:py-12 max-lg:flex max-lg:min-h-[calc(100vh-3.5rem)] max-lg:items-center lg:py-5">
-      <div className="grid w-full items-start gap-8 lg:grid-cols-[1.15fr_auto] lg:gap-10">
+    <section className="pt-4 pb-8 sm:py-12 lg:py-5">
+      <div className="grid w-full items-start gap-5 sm:gap-8 lg:grid-cols-[1.15fr_auto] lg:gap-10">
         <div className="order-2 lg:order-1">
           <h1 className="text-[1.625rem] font-bold tracking-tight text-slate-50 sm:text-4xl lg:text-[2.75rem] lg:leading-[1.2]">
             <span className="block text-slate-400">{site.identityLead}</span>
@@ -55,25 +55,25 @@ export default function Intro() {
             {site.tagline}
           </p>
 
-          <div className="mt-8 flex flex-wrap gap-3">
+          <div className="mt-6 flex flex-nowrap gap-2 sm:mt-8 sm:flex-wrap sm:gap-3">
             <a
               href="#projects"
-              className="inline-flex items-center gap-2 rounded-lg border border-emerald-400/30 bg-emerald-400/10 px-5 py-2.5 text-sm font-medium text-emerald-400 transition-all hover:-translate-y-0.5 hover:border-emerald-400/50 hover:bg-emerald-400/15"
+              className="inline-flex flex-1 items-center justify-center gap-1.5 rounded-lg border border-emerald-400/30 bg-emerald-400/10 px-2 py-2 text-[11px] font-medium whitespace-nowrap text-emerald-400 transition-all hover:-translate-y-0.5 hover:border-emerald-400/50 hover:bg-emerald-400/15 sm:flex-none sm:gap-2 sm:px-5 sm:py-2.5 sm:text-sm"
             >
-              <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg className="hidden h-4 w-4 sm:block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
               </svg>
               프로젝트 보기
             </a>
             <a
               href="#tech"
-              className="inline-flex items-center gap-2 rounded-lg border border-slate-700 bg-slate-800/50 px-5 py-2.5 text-sm font-medium text-slate-300 transition-all hover:-translate-y-0.5 hover:border-sky-400/40 hover:text-sky-400"
+              className="inline-flex flex-1 items-center justify-center rounded-lg border border-slate-700 bg-slate-800/50 px-2 py-2 text-[11px] font-medium whitespace-nowrap text-slate-300 transition-all hover:-translate-y-0.5 hover:border-sky-400/40 hover:text-sky-400 sm:flex-none sm:px-5 sm:py-2.5 sm:text-sm"
             >
               기술 스택
             </a>
             <a
               href="#contact"
-              className="inline-flex items-center gap-2 rounded-lg border border-slate-700 bg-slate-800/50 px-5 py-2.5 text-sm font-medium text-slate-300 transition-all hover:-translate-y-0.5 hover:border-sky-400/40 hover:text-sky-400"
+              className="inline-flex flex-1 items-center justify-center rounded-lg border border-slate-700 bg-slate-800/50 px-2 py-2 text-[11px] font-medium whitespace-nowrap text-slate-300 transition-all hover:-translate-y-0.5 hover:border-sky-400/40 hover:text-sky-400 sm:flex-none sm:px-5 sm:py-2.5 sm:text-sm"
             >
               연락하기
             </a>

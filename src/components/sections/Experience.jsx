@@ -1,3 +1,4 @@
+import { useEffect, useRef } from 'react'
 import SectionHeading from '../ui/SectionHeading'
 import { experiences } from '../../data/portfolio'
 
@@ -61,16 +62,42 @@ function ExperienceItem({ job }) {
 }
 
 export default function Experience() {
+  const scrollRef = useRef(null)
+
+  useEffect(() => {
+    const el = scrollRef.current
+    if (!el) return
+
+    const onWheel = (event) => {
+      const { scrollTop, scrollHeight, clientHeight } = el
+      const maxScroll = scrollHeight - clientHeight
+      if (maxScroll <= 0) return
+
+      const atTop = scrollTop <= 0
+      const atBottom = scrollTop + clientHeight >= maxScroll - 1
+
+      if ((event.deltaY < 0 && atTop) || (event.deltaY > 0 && atBottom)) {
+        window.scrollBy({ top: event.deltaY, left: 0, behavior: 'auto' })
+      }
+    }
+
+    el.addEventListener('wheel', onWheel, { passive: true })
+    return () => el.removeEventListener('wheel', onWheel)
+  }, [])
+
   return (
     <section className="border-t border-slate-800/50 py-14 sm:py-16">
       <SectionHeading
         id="experience"
         label="03 — Experience"
         title="회사 경력"
-        description="총 14년+ 웹 개발 경력입니다. 아래 영역에서 스크롤하여 전체 경력을 확인할 수 있습니다."
+        description="총 22년+ 웹 개발 경력입니다. 아래 영역에서 스크롤하여 전체 경력을 확인할 수 있습니다."
       />
 
-      <div className="experience-scroll max-h-[28rem] overflow-y-auto overscroll-y-contain pr-1 sm:max-h-[32rem]">
+      <div
+        ref={scrollRef}
+        className="experience-scroll max-h-none overflow-visible pr-1 md:max-h-[28rem] md:overflow-y-auto md:overscroll-y-auto lg:max-h-[32rem]"
+      >
         <div className="relative border-l-2 border-slate-800">
           {experiences.map((job) => (
             <ExperienceItem key={`${job.company}-${job.period}`} job={job} />

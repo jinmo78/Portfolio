@@ -1,6 +1,7 @@
 import Header from './components/layout/Header'
 import Footer from './components/layout/Footer'
 import GlowBackground from './components/ui/GlowBackground'
+import ScrollToTopButton from './components/ui/ScrollToTopButton'
 import Intro from './components/sections/Intro'
 import TechStack from './components/sections/TechStack'
 import Projects from './components/sections/Projects'
@@ -24,6 +25,7 @@ function App() {
       </main>
 
       <Footer />
+      <ScrollToTopButton />
     </div>
   )
 }
