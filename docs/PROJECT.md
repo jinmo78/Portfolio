@@ -1,6 +1,6 @@
 # 프로젝트 문서
 
-강진모 개발자 포트폴리오 웹사이트의 구조, 디자인, 콘텐츠 관리 방법을 정리한 문서입니다.
+John.K 개발자 포트폴리오 웹사이트의 구조, 디자인, 콘텐츠 관리 방법을 정리한 문서입니다.
 
 ## 개요
 
@@ -33,6 +33,8 @@ portfolio/
 │   │   │   └── Contact.jsx        # 연락처
 │   │   └── ui/
 │   │       ├── GlowBackground.jsx # 배경 글로우·그리드
+│   │       ├── ProjectCarousel.jsx # 프로젝트 캐러셀 (모바일 더보기 / PC 슬라이드)
+│   │       ├── ScrollToTopButton.jsx
 │   │       ├── SectionHeading.jsx # 섹션 공통 헤더
 │   │       ├── TechBadge.jsx      # 기술 스택 배지
 │   │       └── ProjectCard.jsx    # 프로젝트 카드
@@ -57,7 +59,7 @@ portfolio/
 3. **Tech Stack** — 인터랙티브 기술 배지 클라우드
 4. **Projects** — Flutter / Godot / React 프로젝트 카드
 5. **Experience** — SI 웹 개발 경력 버티컬 타임라인
-6. **Contact** — 이메일, GitHub, LinkedIn
+6. **Contact** — 이메일
 
 ---
 
@@ -94,7 +96,7 @@ portfolio/
 ### Hero (`Intro.jsx`)
 
 - 2열 레이아웃: 왼쪽 아이덴티티 텍스트, 오른쪽 프로필 영역
-- 헤드라인 예시: *"플랫폼을 넘나드는 솔루션 빌더, 개발자 강진모입니다."*
+- 헤드라인 예시: *"플랫폼을 넘나드는 솔루션 빌더, 개발자 John.K입니다."*
 - 프로필 이미지 미설정 시 이니셜 플레이스홀더 표시
 
 ### Tech Stack (`TechStack.jsx` + `TechBadge.jsx`)
@@ -102,20 +104,22 @@ portfolio/
 - 카테고리 카드 대신 **배지 클라우드** 형태
 - `skillBadges` 배열에서 기술명·accent 색상 관리
 
-### Projects (`Projects.jsx` + `ProjectCard.jsx`)
+### Projects (`Projects.jsx` + `ProjectCarousel.jsx` + `ProjectCard.jsx`)
 
-- 카테고리 네온 라벨: `FLUTTER APP`, `GODOT GAME`, `REACT WEBAPP`
+- 모바일: 처음 4개 + "프로젝트 더 보기"
+- 데스크톱: 슬라이드당 6개, 좌우 화살표 캐러셀
 - 하단 CTA: **Live Demo** (filled) + **GitHub Code** (outline)
 
 ### Experience (`Experience.jsx`)
 
 - `border-l-2 border-slate-800` 버티컬 타임라인
-- 왼쪽: 기간 · 직무 · SI 배지 · 회사명
+- 왼쪽: 기간 · 직무 · sector 배지 · 회사명
 - 오른쪽: 설명 · 에메랄드 체크 아이콘 성과 목록 · 기술 태그
+- 데스크톱: 내부 스크롤 박스 + 스크롤 체이닝
 
 ### Contact (`Contact.jsx`)
 
-- 이메일 / GitHub / LinkedIn 버튼
+- 이메일 버튼
 
 ---
 
@@ -127,14 +131,12 @@ portfolio/
 
 ```javascript
 export const site = {
-  name: '강진모',
+  name: 'John.K',
   identityLead: '플랫폼을 넘나드는 솔루션 빌더,',
   identityTail: '개발자',
-  tagline: '...',
+  tagline: '비즈니스와 사용자 경험을 잇는 코드를 만듭니다.',
   email: 'ilovejs97@gmail.com',
-  github: 'https://github.com/jinmo78',
-  linkedin: 'https://linkedin.com/in/...',
-  profileImage: '/profile.jpg',  // public/ 폴더에 이미지 추가 후 경로 지정
+  profileImage,  // src/assets/ 또는 import
 }
 ```
 
@@ -205,4 +207,5 @@ GitHub Pages 프로젝트 사이트이므로 `vite.config.js`에 `base: '/Portfo
 
 ## 변경 이력
 
-자세한 커밋별 기록은 [CHANGELOG.md](../CHANGELOG.md)를 참고하세요.
+- [CHANGELOG.md](../CHANGELOG.md) — 버전별 요약
+- [WORKLOG-2026-06-28.md](WORKLOG-2026-06-28.md) — 2026-06-28 작업 일지

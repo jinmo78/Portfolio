@@ -8,9 +8,9 @@ export default function SectionHeading({ id, label, title, description }) {
         {title}
       </h2>
       {description && (
-        <p className="mt-2 max-w-xl text-sm leading-relaxed text-slate-400 sm:text-base">
+        <div className="mt-2 max-w-xl text-sm leading-relaxed text-slate-400 sm:text-base">
           {description}
-        </p>
+        </div>
       )}
     </div>
   )

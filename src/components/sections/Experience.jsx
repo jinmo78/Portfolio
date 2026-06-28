@@ -91,7 +91,12 @@ export default function Experience() {
         id="experience"
         label="03 — Experience"
         title="회사 경력"
-        description="총 22년+ 웹 개발 경력입니다. 아래 영역에서 스크롤하여 전체 경력을 확인할 수 있습니다."
+        description={
+          <>
+            <span className="block">총 22년+ 웹 개발 경력입니다.</span>
+            <span className="block">아래 영역에서 스크롤하여 전체 경력을 확인할 수 있습니다.</span>
+          </>
+        }
       />
 
       <div
