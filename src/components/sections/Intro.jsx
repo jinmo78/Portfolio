@@ -4,8 +4,8 @@ function ProfileAvatar() {
   const initial = site.name.charAt(0)
 
   return (
-    <div className="profile-avatar relative mx-auto w-full max-w-[17rem] lg:max-w-[19rem]">
-      <div className="profile-avatar-glow absolute -inset-3 rounded-[2.25rem] bg-gradient-to-br from-emerald-400/20 via-transparent to-sky-400/20 blur-2xl" />
+    <div className="profile-avatar relative mx-auto w-full max-w-[15rem] sm:max-w-[17rem] lg:mx-0 lg:max-w-[14.5rem]">
+      <div className="profile-avatar-glow absolute -inset-2 rounded-[2.25rem] bg-gradient-to-br from-emerald-400/20 via-transparent to-sky-400/20 blur-2xl lg:-inset-1" />
 
       <div className="profile-avatar-frame relative overflow-hidden rounded-[2rem] border border-slate-700/80 bg-slate-800/40 p-1.5 shadow-[0_0_40px_rgba(15,23,42,0.5)] backdrop-blur-sm">
         <div className="overflow-hidden rounded-[1.65rem] border border-slate-700/60 bg-slate-900/60">
@@ -37,8 +37,8 @@ function ProfileAvatar() {
 
 export default function Intro() {
   return (
-    <section className="flex min-h-[calc(100vh-3.5rem)] items-center py-10 sm:py-12 lg:min-h-0 lg:items-start lg:py-8">
-      <div className="grid w-full items-center gap-10 lg:grid-cols-[1.15fr_auto] lg:items-start lg:gap-12">
+    <section className="py-10 sm:py-12 max-lg:flex max-lg:min-h-[calc(100vh-3.5rem)] max-lg:items-center lg:py-5">
+      <div className="grid w-full items-start gap-8 lg:grid-cols-[1.15fr_auto] lg:gap-10">
         <div className="order-2 lg:order-1">
           <h1 className="text-[1.625rem] font-bold tracking-tight text-slate-50 sm:text-4xl lg:text-[2.75rem] lg:leading-[1.2]">
             <span className="block text-slate-400">{site.identityLead}</span>
@@ -80,7 +80,7 @@ export default function Intro() {
           </div>
         </div>
 
-        <div className="order-1 flex justify-center lg:order-2 lg:justify-end lg:pt-1">
+        <div className="order-1 self-start lg:order-2 lg:justify-self-end">
           <ProfileAvatar />
         </div>
       </div>

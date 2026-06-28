@@ -56,6 +56,17 @@ body {
   transform: scale(1.03);
 }
 
+@media (min-width: 1024px) {
+  .profile-avatar {
+    animation: none;
+  }
+
+  .profile-avatar-glow {
+    animation: none;
+    opacity: 0.7;
+  }
+}
+
 .experience-scroll {
   scrollbar-width: thin;
   scrollbar-color: rgb(51 65 85) transparent;

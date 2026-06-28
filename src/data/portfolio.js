@@ -1,7 +1,7 @@
 import profileImage from '../assets/profile-anime.png'
 
 export const site = {
-  name: '강진모',
+  name: 'John.K',
   role: 'Full-Stack Developer',
   identityLead: '플랫폼을 넘나드는 솔루션 빌더,',
   identityTail: '개발자',
