@@ -12,6 +12,14 @@ dist
 dist-ssr
 *.local
 
+# 로컬 전용 문서 (보안·인증·내부 메모)
+docs/DEPLOY.md
+docs/WORKLOG-*.md
+*임시*키*
+*access*key*
+.env
+.env.*
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

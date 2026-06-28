@@ -106,7 +106,7 @@ portfolio/
 
 ### Projects (`Projects.jsx` + `ProjectCarousel.jsx` + `ProjectCard.jsx`)
 
-- 모바일: 처음 4개 + "프로젝트 더 보기"
+- 모바일: 처음 3개 + "프로젝트 더 보기"
 - 데스크톱: 슬라이드당 6개, 좌우 화살표 캐러셀
 - 하단 CTA: **Live Demo** (filled) + **GitHub Code** (outline)
 
@@ -196,7 +196,7 @@ npm run preview    # 빌드 결과 미리보기
 
 ### 사전 조건
 
-1. 저장소가 **Public**이어야 함
+1. 저장소가 **Public**이어야 함 (Free 플랜 기준)
 2. Settings → Pages → Source: **GitHub Actions**
 
 ### Vite base 경로
@@ -208,4 +208,3 @@ GitHub Pages 프로젝트 사이트이므로 `vite.config.js`에 `base: '/Portfo
 ## 변경 이력
 
 - [CHANGELOG.md](../CHANGELOG.md) — 버전별 요약
-- [WORKLOG-2026-06-28.md](WORKLOG-2026-06-28.md) — 2026-06-28 작업 일지
