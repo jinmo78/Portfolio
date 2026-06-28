@@ -1,14 +1,13 @@
+import profileImage from '../assets/profile-anime.png'
+
 export const site = {
   name: '강진모',
   role: 'Full-Stack Developer',
   identityLead: '플랫폼을 넘나드는 솔루션 빌더,',
   identityTail: '개발자',
-  tagline:
-    'SI 웹부터 Flutter 앱, Godot 게임, React 웹앱까지 — 비즈니스와 사용자 경험을 잇는 코드를 만듭니다.',
+  tagline: '비즈니스와 사용자 경험을 잇는 코드를 만듭니다.',
   email: 'ilovejs97@gmail.com',
-  github: 'https://github.com/yourname',
-  linkedin: 'https://linkedin.com/in/yourname',
-  profileImage: null,
+  profileImage,
 }
 
 export const navItems = [
@@ -86,13 +85,56 @@ export const experiences = [
 
 export const projects = [
   {
+    title: 'PDF OCR 웹앱',
+    category: 'Python',
+    categoryLabel: 'PYTHON WEBAPP',
+    description:
+      'FastAPI + Streamlit 기반 PDF 파싱·EasyOCR 이미지 OCR 웹앱. Render와 Hugging Face Spaces 분리 배포.',
+    tech: ['Python', 'FastAPI', 'Streamlit', 'EasyOCR'],
+    link: 'https://pdf-ocr-app-f189.onrender.com',
+  },
+  {
+    title: 'React 포트폴리오',
+    category: 'React',
+    categoryLabel: 'REACT WEBAPP',
+    description: 'Tailwind CSS 기반 다크모드 개발자 포트폴리오 웹사이트.',
+    tech: ['React', 'Vite', 'Tailwind CSS'],
+    link: 'https://jinmo78.github.io/Portfolio/',
+  },
+  {
+    title: '정산 계산기',
+    category: 'Next.js',
+    categoryLabel: 'NEXT.JS WEBAPP',
+    description:
+      '모임 생성·초대·참여와 멤버별 비용 정산을 관리하는 웹앱. Supabase 인증 및 Vercel 배포.',
+    tech: ['Next.js', 'TypeScript', 'Supabase'],
+    link: 'https://jeongsan-calculator.vercel.app/login',
+  },
+  {
+    title: '우리말 달인',
+    category: 'Game',
+    categoryLabel: 'MULTIPLAYER GAME',
+    description:
+      '실시간 멀티플랫폼 국어 퀴즈 게임. Expo + Fastify + Socket.io 모노레포.',
+    tech: ['Expo', 'TypeScript', 'Socket.io', 'Fastify'],
+    link: 'https://woorimal-dalin.onrender.com',
+  },
+  {
+    title: '금손95 재고관리',
+    category: 'PHP',
+    categoryLabel: 'INVENTORY SYSTEM',
+    description:
+      '의료기기 재고·입출고·주문·거래처를 관리하는 웹 기반 재고관리 시스템. ABC 분석·재고 실사 지원.',
+    tech: ['PHP', 'MariaDB', 'PhpSpreadsheet'],
+    link: '#',
+  },
+  {
     title: 'Flutter 모바일 앱',
     category: 'Flutter',
     categoryLabel: 'FLUTTER APP',
     description: '크로스 플랫폼 일정 관리 앱. Firebase 연동 및 로컬 알림 구현.',
     tech: ['Flutter', 'Dart', 'Firebase'],
     link: '#',
-    github: '#',
   },
   {
     title: 'Godot 2D 게임',
@@ -101,15 +143,5 @@ export const projects = [
     description: '타일맵 기반 퍼즐 게임. 씬 트리 구조와 상태 머신 패턴 적용.',
     tech: ['Godot 4', 'GDScript'],
     link: '#',
-    github: '#',
-  },
-  {
-    title: 'React 포트폴리오',
-    category: 'React',
-    categoryLabel: 'REACT WEBAPP',
-    description: 'Tailwind CSS 기반 다크모드 개발자 포트폴리오 웹사이트.',
-    tech: ['React', 'Vite', 'Tailwind CSS'],
-    link: '#',
-    github: '#',
   },
 ]

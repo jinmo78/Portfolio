@@ -19,3 +19,39 @@ body {
 ::selection {
   @apply bg-emerald-400/25 text-emerald-200;
 }
+
+@keyframes profile-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes profile-glow-pulse {
+  0%,
+  100% {
+    opacity: 0.55;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.profile-avatar {
+  animation: profile-float 5s ease-in-out infinite;
+}
+
+.profile-avatar-glow {
+  animation: profile-glow-pulse 4s ease-in-out infinite;
+}
+
+.profile-avatar-image {
+  transition: transform 0.5s ease;
+}
+
+.profile-avatar-frame:hover .profile-avatar-image {
+  transform: scale(1.03);
+}

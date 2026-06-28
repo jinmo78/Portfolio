@@ -4,16 +4,16 @@ function ProfileAvatar() {
   const initial = site.name.charAt(0)
 
   return (
-    <div className="relative mx-auto w-full max-w-[17rem] lg:max-w-[19rem]">
-      <div className="absolute -inset-3 rounded-[2.25rem] bg-gradient-to-br from-emerald-400/20 via-transparent to-sky-400/20 blur-2xl" />
+    <div className="profile-avatar relative mx-auto w-full max-w-[17rem] lg:max-w-[19rem]">
+      <div className="profile-avatar-glow absolute -inset-3 rounded-[2.25rem] bg-gradient-to-br from-emerald-400/20 via-transparent to-sky-400/20 blur-2xl" />
 
-      <div className="relative overflow-hidden rounded-[2rem] border border-slate-700/80 bg-slate-800/40 p-1.5 shadow-[0_0_40px_rgba(15,23,42,0.5)] backdrop-blur-sm">
+      <div className="profile-avatar-frame relative overflow-hidden rounded-[2rem] border border-slate-700/80 bg-slate-800/40 p-1.5 shadow-[0_0_40px_rgba(15,23,42,0.5)] backdrop-blur-sm">
         <div className="overflow-hidden rounded-[1.65rem] border border-slate-700/60 bg-slate-900/60">
           {site.profileImage ? (
             <img
               src={site.profileImage}
               alt={`${site.name} 프로필`}
-              className="aspect-square w-full object-cover"
+              className="profile-avatar-image aspect-square w-full object-cover object-[center_20%]"
             />
           ) : (
             <div className="flex aspect-square flex-col items-center justify-center gap-3 bg-gradient-to-br from-slate-900 via-slate-800/80 to-slate-900">
@@ -40,12 +40,7 @@ export default function Intro() {
     <section className="flex min-h-[calc(100vh-3.5rem)] items-center py-14 sm:py-16">
       <div className="grid w-full items-center gap-12 lg:grid-cols-[1.15fr_auto] lg:gap-16">
         <div className="order-2 lg:order-1">
-          <div className="inline-flex w-fit items-center gap-2 rounded-full border border-slate-700/80 bg-slate-800/50 px-3 py-1 font-mono text-xs text-slate-400">
-            <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 shadow-[0_0_8px_rgba(52,211,153,0.6)]" />
-            available for opportunities
-          </div>
-
-          <h1 className="mt-6 text-3xl font-bold tracking-tight text-slate-50 sm:text-4xl lg:text-[2.75rem] lg:leading-[1.2]">
+          <h1 className="text-3xl font-bold tracking-tight text-slate-50 sm:text-4xl lg:text-[2.75rem] lg:leading-[1.2]">
             <span className="block text-slate-400">{site.identityLead}</span>
             <span className="mt-1 block">
               {site.identityTail}{' '}

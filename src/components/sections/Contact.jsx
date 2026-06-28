@@ -15,32 +15,6 @@ const links = [
     ),
     primary: true,
   },
-  {
-    label: 'GitHub',
-    href: site.github,
-    external: true,
-    icon: (
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth={2}
-        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-      />
-    ),
-  },
-  {
-    label: 'LinkedIn',
-    href: site.linkedin,
-    external: true,
-    icon: (
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth={2}
-        d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"
-      />
-    ),
-  },
 ]
 
 export default function Contact() {
@@ -54,8 +28,7 @@ export default function Contact() {
       />
       <div className="rounded-xl border border-slate-800/80 bg-slate-900/40 p-6 backdrop-blur-sm sm:p-8">
         <p className="max-w-md text-sm leading-relaxed text-slate-400">
-          이메일이나 GitHub를 통해 편하게 연락해 주세요.
-          보통 1~2일 이내에 답변드립니다.
+          이메일로 편하게 연락해 주세요.
         </p>
         <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
           {links.map((link) => (
