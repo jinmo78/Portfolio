@@ -2,7 +2,7 @@ import { useState } from 'react'
 import ProjectCard from './ProjectCard'
 
 const PROJECTS_PER_SLIDE = 6
-const MOBILE_INITIAL_COUNT = 4
+const MOBILE_INITIAL_COUNT = 3
 
 function chunkProjects(items, size) {
   const chunks = []
