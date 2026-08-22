@@ -255,7 +255,6 @@ export const projects = [
       'FastAPI + Streamlit 기반 PDF 파싱·EasyOCR 이미지 OCR 웹앱. Render와 Hugging Face Spaces 분리 배포.',
     tech: ['Python', 'FastAPI', 'Streamlit', 'EasyOCR'],
     link: 'https://pdf-ocr-app-f189.onrender.com',
-    github: 'https://github.com/jinmo78/pdf-ocr-webapp',
   },
   {
     title: 'React 포트폴리오',
@@ -264,7 +263,6 @@ export const projects = [
     description: 'Tailwind CSS 기반 다크모드 개발자 포트폴리오 웹사이트.',
     tech: ['React', 'Vite', 'Tailwind CSS'],
     link: 'https://jinmo78.github.io/Portfolio/',
-    github: 'https://github.com/jinmo78/Portfolio',
   },
   {
     title: '금손95 재고관리',

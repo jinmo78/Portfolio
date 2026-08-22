@@ -81,9 +81,6 @@ function getActions(project) {
       variant: actions.length ? 'outline' : 'filled',
     })
   }
-  if (project.github) {
-    actions.push({ href: project.github, label: 'GitHub Code', variant: 'outline' })
-  }
 
   return actions
 }
