@@ -2,6 +2,17 @@
 
 이 프로젝트의 주요 변경 이력입니다.
 
+## [1.6.0] — 2026-08-22
+
+### 개인 프로젝트
+
+- 출시 앱 6개를 정책 사이트 기준으로 반영: 우리말 달인, 정산 계산기, insquare, 1941 Galaxy, 나의 스크랩, 루미
+- 플레이스홀더(Flutter 일정 앱, Godot 퍼즐) 제거
+- App Store / Google Play / 앱 소개 / GitHub 버튼을 프로젝트 카드에 추가
+- 기술 배지에 Expo, FastAPI, Supabase, Firebase, TypeScript 추가
+
+---
+
 ## [1.5.1] — 2026-06-28
 
 ### 모바일 UX

@@ -9,7 +9,7 @@ export default function Projects() {
         id="projects"
         label="02 — Projects"
         title="개인 프로젝트"
-        description="웹, 모바일, 게임 등 다양한 스택으로 진행한 사이드 프로젝트입니다."
+        description="출시한 앱과 사이드 프로젝트를 소개합니다. 웹, 모바일, 게임을 넘나듭니다."
       />
       <ProjectCarousel projects={projects} />
     </section>

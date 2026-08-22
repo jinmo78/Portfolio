@@ -23,11 +23,15 @@ export const skillBadges = [
   { name: 'Next.js', accent: 'sky' },
   { name: 'Flutter', accent: 'sky' },
   { name: 'Dart', accent: 'sky' },
+  { name: 'Expo', accent: 'sky' },
   { name: 'Godot', accent: 'emerald' },
   { name: 'GDScript', accent: 'emerald' },
+  { name: 'FastAPI', accent: 'emerald' },
+  { name: 'Supabase', accent: 'sky' },
+  { name: 'Firebase', accent: 'sky' },
   { name: 'PHP', accent: 'emerald' },
   { name: 'MariaDB', accent: 'emerald' },
-  { name: 'JavaScript', accent: 'sky' },
+  { name: 'TypeScript', accent: 'sky' },
   { name: 'Tailwind CSS', accent: 'sky' },
   { name: 'Node.js', accent: 'emerald' },
   { name: 'Git', accent: 'sky' },
@@ -178,6 +182,72 @@ export const experiences = [
 
 export const projects = [
   {
+    title: '우리말 달인',
+    slogan: '실시간으로 겨루는 우리말 퀴즈',
+    category: 'Game',
+    categoryLabel: 'MULTIPLAYER GAME',
+    description:
+      '맞춤법·어휘를 부저 퀴즈로 겨루는 실시간 멀티플레이 게임. 솔로 연습, 초대 코드 친구 플레이, 실시간 대전을 지원하고 Google 로그인으로 기록을 이어갈 수 있습니다.',
+    tech: ['Expo', 'TypeScript', 'Socket.io', 'Fastify'],
+    link: 'https://woorimal-dalin.onrender.com',
+  },
+  {
+    title: '정산 계산기',
+    slogan: '모임 지출을 나눠 계산하고 계좌로 안내하는 정산 도구',
+    category: 'Next.js',
+    categoryLabel: 'NEXT.JS WEBAPP',
+    description:
+      '이메일 가입 후 모임을 만들고 지출을 나눠 계산합니다. 이름·계좌를 저장하고 초대 코드로 참가자를 부르며, 송금은 하지 않는 계산 도구입니다.',
+    tech: ['Next.js', 'TypeScript', 'Supabase'],
+    link: 'https://jeongsan-calculator.vercel.app',
+  },
+  {
+    title: 'insquare',
+    slogan: '초대한 사람들과만 나누는 프라이빗 사진 공간',
+    category: 'Flutter',
+    categoryLabel: 'FLUTTER APP',
+    description:
+      '공개 피드가 없는 프라이빗 사진 공간. 방을 만들고 초대·QR로만 입장하며, Google·Apple·카카오 로그인을 지원합니다.',
+    tech: ['Flutter', 'Dart', 'Firebase'],
+    link: 'https://my-app-policies-blond.vercel.app/ko/apps/insquare',
+    linkLabel: '앱 소개',
+  },
+  {
+    title: '1941 Galaxy',
+    slogan: '한 손으로 즐기는 종스크롤 슈팅',
+    category: 'Godot',
+    categoryLabel: 'GODOT GAME',
+    description:
+      '프롭 전투기로 탄막을 피하고 보스를 격파하는 캐주얼 슈팅 게임. 자동 발사·캠페인·협동 모드를 제공하며, 최고 점수는 기기에 저장됩니다.',
+    tech: ['Godot 4', 'GDScript'],
+    link: 'https://my-app-policies-blond.vercel.app/ko/apps/shooter-1941',
+    linkLabel: '앱 소개',
+  },
+  {
+    title: '나의 스크랩',
+    slogan: '웹에서 본 좋은 정보, 기기 안에만 모아 두는 스크랩 앱',
+    category: 'Flutter',
+    categoryLabel: 'ON-DEVICE APP',
+    description:
+      '유튜브·블로그·기사 링크를 폴더로 정리하고 검색·즐겨찾기로 다시 찾습니다. 데이터는 서버가 아니라 기기에만 저장되며, 공유하기·사진 OCR·로컬 백업을 지원합니다.',
+    tech: ['Flutter', 'Dart', 'SQLite'],
+    link: 'https://my-app-policies-blond.vercel.app/ko/apps/my-scrap',
+    linkLabel: '앱 소개',
+    appStoreUrl: 'https://apps.apple.com/kr/app/%EB%82%98%EC%9D%98-%EC%8A%A4%ED%81%AC%EB%9E%A9/id6793531420',
+    playStoreUrl: 'https://play.google.com/store/apps/details?id=com.jinmo.myscrap&hl=ko',
+  },
+  {
+    title: '루미',
+    slogan: 'AI 캐릭터와 이야기를 이어가는 공간',
+    category: 'AI',
+    categoryLabel: 'AI CHAT APP',
+    description:
+      '이야기 장면을 고르고 자유 채팅이나 에피소드로 이어 씁니다. 익명 둘러보기와 카카오·Google·Apple·이메일 로그인을 지원하며, 가상의 창작 인물만 다룹니다.',
+    tech: ['Flutter', 'FastAPI', 'OpenAI', 'Supabase'],
+    link: 'https://my-app-policies-blond.vercel.app/ko/apps/lumi',
+    linkLabel: '앱 소개',
+  },
+  {
     title: 'PDF OCR 웹앱',
     category: 'Python',
     categoryLabel: 'PYTHON WEBAPP',
@@ -185,6 +255,7 @@ export const projects = [
       'FastAPI + Streamlit 기반 PDF 파싱·EasyOCR 이미지 OCR 웹앱. Render와 Hugging Face Spaces 분리 배포.',
     tech: ['Python', 'FastAPI', 'Streamlit', 'EasyOCR'],
     link: 'https://pdf-ocr-app-f189.onrender.com',
+    github: 'https://github.com/jinmo78/pdf-ocr-webapp',
   },
   {
     title: 'React 포트폴리오',
@@ -193,24 +264,7 @@ export const projects = [
     description: 'Tailwind CSS 기반 다크모드 개발자 포트폴리오 웹사이트.',
     tech: ['React', 'Vite', 'Tailwind CSS'],
     link: 'https://jinmo78.github.io/Portfolio/',
-  },
-  {
-    title: '정산 계산기',
-    category: 'Next.js',
-    categoryLabel: 'NEXT.JS WEBAPP',
-    description:
-      '모임 생성·초대·참여와 멤버별 비용 정산을 관리하는 웹앱. Supabase 인증 및 Vercel 배포.',
-    tech: ['Next.js', 'TypeScript', 'Supabase'],
-    link: 'https://jeongsan-calculator.vercel.app/login',
-  },
-  {
-    title: '우리말 달인',
-    category: 'Game',
-    categoryLabel: 'MULTIPLAYER GAME',
-    description:
-      '실시간 멀티플랫폼 국어 퀴즈 게임. Expo + Fastify + Socket.io 모노레포.',
-    tech: ['Expo', 'TypeScript', 'Socket.io', 'Fastify'],
-    link: 'https://woorimal-dalin.onrender.com',
+    github: 'https://github.com/jinmo78/Portfolio',
   },
   {
     title: '금손95 재고관리',
@@ -219,22 +273,6 @@ export const projects = [
     description:
       '의료기기 재고·입출고·주문·거래처를 관리하는 웹 기반 재고관리 시스템. ABC 분석·재고 실사 지원.',
     tech: ['PHP', 'MariaDB', 'PhpSpreadsheet'],
-    link: '#',
-  },
-  {
-    title: 'Flutter 모바일 앱',
-    category: 'Flutter',
-    categoryLabel: 'FLUTTER APP',
-    description: '크로스 플랫폼 일정 관리 앱. Firebase 연동 및 로컬 알림 구현.',
-    tech: ['Flutter', 'Dart', 'Firebase'],
-    link: '#',
-  },
-  {
-    title: 'Godot 2D 게임',
-    category: 'Godot',
-    categoryLabel: 'GODOT GAME',
-    description: '타일맵 기반 퍼즐 게임. 씬 트리 구조와 상태 머신 패턴 적용.',
-    tech: ['Godot 4', 'GDScript'],
     link: '#',
   },
 ]

@@ -108,7 +108,8 @@ portfolio/
 
 - 모바일: 처음 3개 + "프로젝트 더 보기"
 - 데스크톱: 슬라이드당 6개, 좌우 화살표 캐러셀
-- 하단 CTA: **Live Demo** (filled) + **GitHub Code** (outline)
+- 1페이지: 출시 앱 6개 (정책 사이트와 동일 순서)
+- 하단 CTA: **Live Demo / 앱 소개 / 스토어** (filled) + **GitHub Code** (outline)
 
 ### Experience (`Experience.jsx`)
 
@@ -154,11 +155,15 @@ export const skillBadges = [
 ```javascript
 {
   title: '프로젝트명',
-  category: 'Flutter',           // Flutter | Godot | React
+  slogan: '한 줄 소개',          // 선택
+  category: 'Flutter',           // Flutter | Godot | React | Next.js | Python | PHP | Game | AI
   categoryLabel: 'FLUTTER APP',  // 카드 상단 네온 라벨
   description: '...',
   tech: ['Flutter', 'Dart'],
-  link: 'https://...',
+  link: 'https://...',           // Live Demo 또는 앱 소개
+  linkLabel: '앱 소개',          // 기본값: Live Demo
+  appStoreUrl: 'https://...',    // 선택
+  playStoreUrl: 'https://...',   // 선택
   github: 'https://github.com/...',
 }
 ```
