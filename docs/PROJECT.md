@@ -6,7 +6,7 @@ John.K 개발자 포트폴리오 웹사이트의 구조, 디자인, 콘텐츠 �
 
 | 항목 | 내용 |
 |------|------|
-| **목적** | SI 웹 개발 및 개인 프로젝트(Flutter, Godot, React) 경력을 소개하는 포트폴리오 |
+| **목적** | AI Agent + 웹/앱 출시 포트폴리오 |
 | **기술 스택** | React 19, Vite 8, Tailwind CSS 4 |
 | **배포** | GitHub Pages (GitHub Actions 자동 배포) |
 | **Live URL** | https://jinmo78.github.io/Portfolio/ |

@@ -9,7 +9,7 @@ export default function TechStack() {
         id="tech"
         label="01 — Tech Stack"
         title="기술 스택"
-        description="출시 앱과 실무에서 다루는 웹, 모바일, 게임, AI 스택입니다."
+        description="AI Agent 스택을 앞에 두고, 출시·운영에 쓴 웹·앱 기술을 이었습니다."
       />
       <div className="flex flex-wrap gap-2.5 sm:gap-3">
         {skillBadges.map((skill) => (

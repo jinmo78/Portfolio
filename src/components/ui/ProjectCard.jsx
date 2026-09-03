@@ -81,6 +81,13 @@ function getActions(project) {
       variant: actions.length ? 'outline' : 'filled',
     })
   }
+  if (project.github) {
+    actions.push({
+      href: project.github,
+      label: 'GitHub',
+      variant: actions.length ? 'outline' : 'filled',
+    })
+  }
 
   return actions
 }

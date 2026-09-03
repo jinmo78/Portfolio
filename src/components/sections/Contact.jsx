@@ -24,7 +24,7 @@ export default function Contact() {
         id="contact"
         label="04 — Contact"
         title="연락처"
-        description="프로젝트 협업이나 채용 관련 문의를 환영합니다."
+        description="AI Agent 개발 포지션 채용·협업 문의를 환영합니다."
       />
       <div className="rounded-xl border border-slate-800/80 bg-slate-900/40 p-6 backdrop-blur-sm sm:p-8">
         <p className="max-w-md text-sm leading-relaxed text-slate-400">

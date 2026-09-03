@@ -2,10 +2,11 @@ import profileImage from '../assets/profile-anime.png'
 
 export const site = {
   name: 'John.K',
-  role: 'Full-Stack Developer',
-  identityLead: '플랫폼을 넘나드는 솔루션 빌더,',
-  identityTail: '개발자',
-  tagline: '비즈니스와 사용자 경험을 잇는 코드를 만듭니다.',
+  role: 'AI Agent Developer',
+  identityLead: '웹 서비스를 출시해 온,',
+  identityTail: 'AI Agent 개발자',
+  tagline:
+    '웹 서비스를 출시·운영해 온 개발자가, 국비지원 AI 과정에서 RAG·LangChain·LangGraph Agent를 배우고, 루미(스토어)와 PDF OCR 웹앱(배포)으로 증명합니다.',
   email: 'ilovejs97@gmail.com',
   profileImage,
 }
@@ -19,24 +20,20 @@ export const navItems = [
 ]
 
 export const skillBadges = [
-  { name: 'React', accent: 'emerald' },
-  { name: 'Next.js', accent: 'sky' },
-  { name: 'TypeScript', accent: 'sky' },
-  { name: 'Tailwind CSS', accent: 'sky' },
-  { name: 'Flutter', accent: 'sky' },
-  { name: 'Dart', accent: 'sky' },
-  { name: 'Expo', accent: 'sky' },
   { name: 'Python', accent: 'emerald' },
   { name: 'FastAPI', accent: 'emerald' },
-  { name: 'Fastify', accent: 'emerald' },
-  { name: 'Node.js', accent: 'emerald' },
-  { name: 'Socket.io', accent: 'sky' },
-  { name: 'Supabase', accent: 'sky' },
-  { name: 'Firebase', accent: 'sky' },
-  { name: 'SQLite', accent: 'sky' },
   { name: 'OpenAI', accent: 'emerald' },
-  { name: 'Godot', accent: 'emerald' },
-  { name: 'GDScript', accent: 'emerald' },
+  { name: 'LangChain', accent: 'emerald' },
+  { name: 'LangGraph', accent: 'emerald' },
+  { name: 'RAG', accent: 'emerald' },
+  { name: 'OCR', accent: 'emerald' },
+  { name: 'Streamlit', accent: 'emerald' },
+  { name: 'Flutter', accent: 'sky' },
+  { name: 'React', accent: 'sky' },
+  { name: 'Next.js', accent: 'sky' },
+  { name: 'TypeScript', accent: 'sky' },
+  { name: 'Supabase', accent: 'sky' },
+  { name: 'Node.js', accent: 'emerald' },
   { name: 'PHP', accent: 'emerald' },
   { name: 'MariaDB', accent: 'emerald' },
   { name: 'Git', accent: 'sky' },
@@ -44,16 +41,20 @@ export const skillBadges = [
 
 export const techStack = [
   {
+    category: 'AI / Agent',
+    items: ['Python', 'FastAPI', 'OpenAI', 'LangChain', 'LangGraph', 'RAG', 'OCR', 'Streamlit'],
+  },
+  {
+    category: '앱·프론트',
+    items: ['Flutter', 'React', 'Next.js', 'TypeScript'],
+  },
+  {
+    category: '백엔드·DB',
+    items: ['Supabase', 'Node.js', 'PHP', 'MariaDB'],
+  },
+  {
     category: '업무 (SI)',
     items: ['PHP', 'MariaDB', 'JavaScript', 'HTML/CSS', 'Linux'],
-  },
-  {
-    category: '프론트엔드',
-    items: ['React', 'Tailwind CSS', 'Flutter', 'Dart'],
-  },
-  {
-    category: '백엔드 & DB',
-    items: ['Node.js', 'REST API', 'MariaDB', 'MySQL'],
   },
   {
     category: '게임 & 기타',
@@ -65,14 +66,20 @@ export const experiences = [
   {
     company: 'DEJAY',
     role: '개발팀 수석연구원',
-    sector: 'WEB',
+    sector: 'AI',
     period: '2020.07 — 현재',
-    description: '시스템 및 사이트 운영·개발 및 서버 관리를 담당하며 서비스를 유지보수합니다.',
+    description:
+      '웹 서비스를 출시·운영해 온 기반 위에, Agent·RAG를 익히고 루미와 PDF OCR로 배포까지 증명합니다.',
     highlights: [
+      '스파르타클럽 프로캠프 AI 서비스 엔지니어링 트랙 9기 수료(2026.04–08, 국비지원). LangChain/LangGraph Agent, RAG(FAISS), OCR/PDF, n8n 업무 자동화.',
+      '개인 앱 루미에 OpenAI 대화 Agent(메모리·발화 제안·에피소드)를 붙여 스토어 배포.',
       'Windows 및 Linux 서버 환경 운영·관리',
       'Oracle, MariaDB, MySQL, MS-SQL 데이터베이스 연동 및 유지보수',
     ],
     tech: [
+      'Python',
+      'FastAPI',
+      'OpenAI',
       'ASP',
       'PHP',
       'JSP',
@@ -81,8 +88,6 @@ export const experiences = [
       'Next.js',
       'TypeScript',
       'Tailwind CSS',
-      'Python',
-      'FastAPI',
       'Flutter',
       'Dart',
       'Oracle',
@@ -187,6 +192,53 @@ export const experiences = [
 
 export const projects = [
   {
+    title: '루미',
+    slogan: '대화를 기억하고 이어 쓰는 AI 캐릭터',
+    category: 'AI',
+    categoryLabel: 'AI AGENT APP',
+    description:
+      '장면 선택, 자유 채팅/에피소드, 대화 기억, 다음 발화 제안, 스튜디오. Flutter + FastAPI + OpenAI + Supabase. Android/iOS 배포.',
+    tech: ['Flutter', 'FastAPI', 'OpenAI', 'Supabase'],
+    link: 'https://my-app-policies-blond.vercel.app/ko/apps/lumi',
+    linkLabel: '앱 소개',
+    appStoreUrl: 'https://apps.apple.com/kr/app/id6794529020',
+    playStoreUrl: 'https://play.google.com/store/apps/details?id=com.jinmo78.lumi',
+  },
+  {
+    title: 'PDF OCR 웹앱',
+    category: 'Python',
+    categoryLabel: 'PYTHON WEBAPP',
+    description:
+      'FastAPI+Streamlit 웹앱. EasyOCR로 영수증 상품명·금액을 추출하고, Render 메모리 한계로 OCR을 Hugging Face Space로 분리했습니다.',
+    tech: ['Python', 'FastAPI', 'Streamlit', 'EasyOCR'],
+    link: 'https://pdf-ocr-app-f189.onrender.com',
+    github: 'https://github.com/jinmo78/pdf-ocr-webapp',
+  },
+  {
+    title: '나의 스크랩',
+    slogan: '웹에서 본 좋은 정보, 기기 안에만 모아 두는 스크랩 앱',
+    category: 'Flutter',
+    categoryLabel: 'ON-DEVICE OCR',
+    description:
+      '온디바이스 OCR·로컬 SQLite·공유하기·백업을 지원합니다. 데이터는 서버에 올리지 않습니다.',
+    tech: ['Flutter', 'Dart', 'SQLite'],
+    link: 'https://my-app-policies-blond.vercel.app/ko/apps/my-scrap',
+    linkLabel: '앱 소개',
+    appStoreUrl: 'https://apps.apple.com/kr/app/%EB%82%98%EC%9D%98-%EC%8A%A4%ED%81%AC%EB%9E%A9/id6793531420',
+    playStoreUrl: 'https://play.google.com/store/apps/details?id=com.jinmo.myscrap&hl=ko',
+  },
+  {
+    title: 'insquare',
+    slogan: '초대한 사람들과만 나누는 프라이빗 사진 공간',
+    category: 'Flutter',
+    categoryLabel: 'FLUTTER APP',
+    description:
+      '공개 피드가 없는 프라이빗 사진 공간. 방을 만들고 초대·QR로만 입장하며, Google·Apple·카카오 로그인을 지원합니다.',
+    tech: ['Flutter', 'Dart', 'Firebase'],
+    link: 'https://my-app-policies-blond.vercel.app/ko/apps/insquare',
+    linkLabel: '앱 소개',
+  },
+  {
     title: '우리말 달인',
     slogan: '실시간으로 겨루는 우리말 퀴즈',
     category: 'Game',
@@ -207,17 +259,6 @@ export const projects = [
     link: 'https://jeongsan-calculator.vercel.app',
   },
   {
-    title: 'insquare',
-    slogan: '초대한 사람들과만 나누는 프라이빗 사진 공간',
-    category: 'Flutter',
-    categoryLabel: 'FLUTTER APP',
-    description:
-      '공개 피드가 없는 프라이빗 사진 공간. 방을 만들고 초대·QR로만 입장하며, Google·Apple·카카오 로그인을 지원합니다.',
-    tech: ['Flutter', 'Dart', 'Firebase'],
-    link: 'https://my-app-policies-blond.vercel.app/ko/apps/insquare',
-    linkLabel: '앱 소개',
-  },
-  {
     title: '1941 Galaxy',
     slogan: '한 손으로 즐기는 종스크롤 슈팅',
     category: 'Godot',
@@ -229,37 +270,13 @@ export const projects = [
     linkLabel: '앱 소개',
   },
   {
-    title: '나의 스크랩',
-    slogan: '웹에서 본 좋은 정보, 기기 안에만 모아 두는 스크랩 앱',
-    category: 'Flutter',
-    categoryLabel: 'ON-DEVICE APP',
+    title: '금손95 재고관리',
+    category: 'PHP',
+    categoryLabel: 'INVENTORY SYSTEM',
     description:
-      '유튜브·블로그·기사 링크를 폴더로 정리하고 검색·즐겨찾기로 다시 찾습니다. 데이터는 서버가 아니라 기기에만 저장되며, 공유하기·사진 OCR·로컬 백업을 지원합니다.',
-    tech: ['Flutter', 'Dart', 'SQLite'],
-    link: 'https://my-app-policies-blond.vercel.app/ko/apps/my-scrap',
-    linkLabel: '앱 소개',
-    appStoreUrl: 'https://apps.apple.com/kr/app/%EB%82%98%EC%9D%98-%EC%8A%A4%ED%81%AC%EB%9E%A9/id6793531420',
-    playStoreUrl: 'https://play.google.com/store/apps/details?id=com.jinmo.myscrap&hl=ko',
-  },
-  {
-    title: '루미',
-    slogan: 'AI 캐릭터와 이야기를 이어가는 공간',
-    category: 'AI',
-    categoryLabel: 'AI CHAT APP',
-    description:
-      '이야기 장면을 고르고 자유 채팅이나 에피소드로 이어 씁니다. 익명 둘러보기와 카카오·Google·Apple·이메일 로그인을 지원하며, 가상의 창작 인물만 다룹니다.',
-    tech: ['Flutter', 'FastAPI', 'OpenAI', 'Supabase'],
-    link: 'https://my-app-policies-blond.vercel.app/ko/apps/lumi',
-    linkLabel: '앱 소개',
-  },
-  {
-    title: 'PDF OCR 웹앱',
-    category: 'Python',
-    categoryLabel: 'PYTHON WEBAPP',
-    description:
-      'FastAPI + Streamlit 기반 PDF 파싱·EasyOCR 이미지 OCR 웹앱. Render와 Hugging Face Spaces 분리 배포.',
-    tech: ['Python', 'FastAPI', 'Streamlit', 'EasyOCR'],
-    link: 'https://pdf-ocr-app-f189.onrender.com',
+      '의료기기 재고·입출고·주문·거래처를 관리하는 웹 기반 재고관리 시스템. ABC 분석·재고 실사 지원.',
+    tech: ['PHP', 'MariaDB', 'PhpSpreadsheet'],
+    link: '#',
   },
   {
     title: 'React 포트폴리오',
@@ -268,14 +285,5 @@ export const projects = [
     description: 'Tailwind CSS 기반 다크모드 개발자 포트폴리오 웹사이트.',
     tech: ['React', 'Vite', 'Tailwind CSS'],
     link: 'https://jinmo78.github.io/Portfolio/',
-  },
-  {
-    title: '금손95 재고관리',
-    category: 'PHP',
-    categoryLabel: 'INVENTORY SYSTEM',
-    description:
-      '의료기기 재고·입출고·주문·거래처를 관리하는 웹 기반 재고관리 시스템. ABC 분석·재고 실사 지원.',
-    tech: ['PHP', 'MariaDB', 'PhpSpreadsheet'],
-    link: '#',
   },
 ]

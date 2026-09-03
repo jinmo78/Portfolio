@@ -141,7 +141,7 @@ export default function Experience() {
         title="회사 경력"
         description={
           <>
-            <span className="block">총 22년+ 웹 개발 경력입니다.</span>
+            <span className="block">22년+ 웹 경력에서 AI Agent 개발자로 전향합니다.</span>
             <span className="block md:hidden">더 보기로 전체 경력을 확인할 수 있습니다.</span>
             <span className="hidden md:block">아래 영역에서 스크롤하여 전체 경력을 확인할 수 있습니다.</span>
           </>
