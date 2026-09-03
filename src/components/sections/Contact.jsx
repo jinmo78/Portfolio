@@ -22,7 +22,7 @@ export default function Contact() {
     <section className="border-t border-slate-800/50 py-14 sm:py-16">
       <SectionHeading
         id="contact"
-        label="04 — Contact"
+        label="05 — Contact"
         title="연락처"
         description="AI Agent 개발 포지션 채용·협업 문의를 환영합니다."
       />

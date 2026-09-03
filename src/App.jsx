@@ -6,6 +6,7 @@ import Intro from './components/sections/Intro'
 import TechStack from './components/sections/TechStack'
 import Projects from './components/sections/Projects'
 import Experience from './components/sections/Experience'
+import Certificates from './components/sections/Certificates'
 import Contact from './components/sections/Contact'
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <TechStack />
         <Projects />
         <Experience />
+        <Certificates />
         <Contact />
       </main>
 

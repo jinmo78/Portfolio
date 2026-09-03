@@ -1,4 +1,6 @@
 import profileImage from '../assets/profile-anime.png'
+import certAiEngineering from '../assets/certificates/ai-engineering.jpg'
+import certPythonData from '../assets/certificates/python-data.jpg'
 
 export const site = {
   name: 'John.K',
@@ -16,7 +18,25 @@ export const navItems = [
   { id: 'tech', label: '기술스택' },
   { id: 'projects', label: '프로젝트' },
   { id: 'experience', label: '경력' },
+  { id: 'certificates', label: '수료증' },
   { id: 'contact', label: '연락처' },
+]
+
+export const certificates = [
+  {
+    title: '프로 캠프 AI 서비스 엔지니어링 트랙 9기',
+    issuer: '스파르타클럽',
+    period: '2026.04.20 — 2026.08.11',
+    issued: '2026.09.03',
+    image: certAiEngineering,
+  },
+  {
+    title: '데이터 분석 파이썬 종합반',
+    issuer: '스파르타클럽',
+    period: '2026.04.13 — 2026.08.12',
+    issued: '2026.09.03',
+    image: certPythonData,
+  },
 ]
 
 export const skillBadges = [

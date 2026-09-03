@@ -30,6 +30,7 @@ portfolio/
 │   │   │   ├── TechStack.jsx      # 기술 스택 배지
 │   │   │   ├── Projects.jsx       # 개인 프로젝트 목록
 │   │   │   ├── Experience.jsx     # 회사 경력 타임라인
+│   │   │   ├── Certificates.jsx  # 수료증
 │   │   │   └── Contact.jsx        # 연락처
 │   │   └── ui/
 │   │       ├── GlowBackground.jsx # 배경 글로우·그리드
@@ -59,7 +60,8 @@ portfolio/
 3. **Tech Stack** — 인터랙티브 기술 배지 클라우드
 4. **Projects** — Flutter / Godot / React 프로젝트 카드
 5. **Experience** — SI 웹 개발 경력 버티컬 타임라인
-6. **Contact** — 이메일
+6. **Certificates** — 수료증 카드
+7. **Contact** — 이메일
 
 ---
 
@@ -118,6 +120,11 @@ portfolio/
 - 오른쪽: 설명 · 에메랄드 체크 아이콘 성과 목록 · 기술 태그
 - 데스크톱: 내부 스크롤 박스 + 스크롤 체이닝
 
+### Certificates (`Certificates.jsx`)
+
+- `certificates` 배열에서 제목·발급기관·기간·이미지 관리
+- 2열 카드, 이미지 클릭 시 원본 확대
+
 ### Contact (`Contact.jsx`)
 
 - 이메일 버튼
@@ -164,6 +171,18 @@ export const skillBadges = [
   linkLabel: '앱 소개',          // 기본값: Live Demo
   appStoreUrl: 'https://...',    // 선택
   playStoreUrl: 'https://...',   // 선택
+}
+```
+
+### 수료증 추가
+
+```javascript
+{
+  title: '과정명',
+  issuer: '스파르타클럽',
+  period: '2026.04.20 — 2026.08.11',
+  issued: '2026.09.03',
+  image: certAiEngineering,  // src/assets/certificates/
 }
 ```
 
