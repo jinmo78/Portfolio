@@ -1,4 +1,4 @@
-import { site } from '../../data/portfolio'
+import { navItems, site } from '../../data/portfolio'
 
 function ProfileAvatar() {
   const initial = site.name.charAt(0)
@@ -55,28 +55,22 @@ export default function Intro() {
             {site.tagline}
           </p>
 
-          <div className="mt-6 flex flex-nowrap gap-2 sm:mt-8 sm:flex-wrap sm:gap-3">
-            <a
-              href="#tech"
-              className="inline-flex flex-1 items-center justify-center rounded-lg border border-slate-700 bg-slate-800/50 px-2 py-2 text-[11px] font-medium whitespace-nowrap text-slate-300 transition-all hover:-translate-y-0.5 hover:border-sky-400/40 hover:text-sky-400 sm:flex-none sm:px-5 sm:py-2.5 sm:text-sm"
-            >
-              기술 스택
-            </a>
-            <a
-              href="#projects"
-              className="inline-flex flex-1 items-center justify-center gap-1.5 rounded-lg border border-emerald-400/30 bg-emerald-400/10 px-2 py-2 text-[11px] font-medium whitespace-nowrap text-emerald-400 transition-all hover:-translate-y-0.5 hover:border-emerald-400/50 hover:bg-emerald-400/15 sm:flex-none sm:gap-2 sm:px-5 sm:py-2.5 sm:text-sm"
-            >
-              <svg className="hidden h-4 w-4 sm:block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-              </svg>
-              프로젝트 보기
-            </a>
-            <a
-              href="#contact"
-              className="inline-flex flex-1 items-center justify-center rounded-lg border border-slate-700 bg-slate-800/50 px-2 py-2 text-[11px] font-medium whitespace-nowrap text-slate-300 transition-all hover:-translate-y-0.5 hover:border-sky-400/40 hover:text-sky-400 sm:flex-none sm:px-5 sm:py-2.5 sm:text-sm"
-            >
-              연락하기
-            </a>
+          <div className="mt-6 flex flex-wrap gap-2 sm:mt-8 sm:gap-3">
+            {navItems
+              .filter((item) => item.id !== 'intro')
+              .map((item) => (
+                <a
+                  key={item.id}
+                  href={`#${item.id}`}
+                  className={
+                    item.id === 'projects'
+                      ? 'inline-flex min-w-[4.5rem] flex-1 items-center justify-center gap-1.5 rounded-lg border border-emerald-400/30 bg-emerald-400/10 px-2 py-2 text-[11px] font-medium whitespace-nowrap text-emerald-400 transition-all hover:-translate-y-0.5 hover:border-emerald-400/50 hover:bg-emerald-400/15 sm:flex-none sm:gap-2 sm:px-5 sm:py-2.5 sm:text-sm'
+                      : 'inline-flex min-w-[4.5rem] flex-1 items-center justify-center rounded-lg border border-slate-700 bg-slate-800/50 px-2 py-2 text-[11px] font-medium whitespace-nowrap text-slate-300 transition-all hover:-translate-y-0.5 hover:border-sky-400/40 hover:text-sky-400 sm:flex-none sm:px-5 sm:py-2.5 sm:text-sm'
+                  }
+                >
+                  {item.label}
+                </a>
+              ))}
           </div>
         </div>
 
