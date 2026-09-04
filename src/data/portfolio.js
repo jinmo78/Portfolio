@@ -8,7 +8,7 @@ export const site = {
   identityLead: '웹 서비스를 출시해 온,',
   identityTail: 'AI Agent 개발자',
   tagline:
-    '웹 서비스를 출시·운영해 온 개발자가, 국비지원 AI 과정에서 RAG·LangChain·LangGraph Agent를 배우고, 루미(스토어)와 PDF OCR 웹앱(배포)으로 증명합니다.',
+    '웹 서비스를 출시·운영해 온 개발자가, 국비지원 AI 과정에서 RAG·LangChain·LangGraph Agent를 배우고, 루미(스토어)와 PDF OCR 웹앱(배포)으로 시작합니다.',
   email: 'ilovejs97@gmail.com',
   profileImage,
 }
@@ -89,7 +89,7 @@ export const experiences = [
     sector: 'AI',
     period: '2020.07 — 현재',
     description:
-      '웹 서비스를 출시·운영해 온 기반 위에, Agent·RAG를 익히고 루미와 PDF OCR로 배포까지 증명합니다.',
+      '웹 서비스를 출시·운영해 온 기반 위에, Agent·RAG를 익히고 루미와 PDF OCR 배포부터 시작합니다.',
     highlights: [
       '스파르타클럽 프로캠프 AI 서비스 엔지니어링 트랙 9기 수료(2026.04–08, 국비지원). LangChain/LangGraph Agent, RAG(FAISS), OCR/PDF, n8n 업무 자동화.',
       '개인 앱 루미에 OpenAI 대화 Agent(메모리·발화 제안·에피소드)를 붙여 스토어 배포.',
@@ -231,7 +231,7 @@ export const projects = [
     description:
       'FastAPI+Streamlit 웹앱. EasyOCR로 영수증 상품명·금액을 추출하고, Render 메모리 한계로 OCR을 Hugging Face Space로 분리했습니다.',
     tech: ['Python', 'FastAPI', 'Streamlit', 'EasyOCR'],
-    link: 'https://pdf-ocr-app-f189.onrender.com',
+    status: '준비중',
     github: 'https://github.com/jinmo78/pdf-ocr-webapp',
   },
   {
@@ -288,6 +288,18 @@ export const projects = [
     tech: ['Godot 4', 'GDScript'],
     link: 'https://my-app-policies-blond.vercel.app/ko/apps/shooter-1941',
     linkLabel: '앱 소개',
+  },
+  {
+    title: '앱 소개 · 약관',
+    slogan: '출시 앱의 소개와 개인정보·이용약관을 한곳에',
+    category: 'Next.js',
+    categoryLabel: 'APP HUB',
+    description:
+      '루미, 나의 스크랩, INSQUARE 등 개인 앱의 소개·개인정보처리방침·이용약관을 제공하는 허브. Markdown을 Next.js로 렌더링합니다.',
+    tech: ['Next.js', 'TypeScript', 'Tailwind CSS'],
+    link: 'https://my-app-policies-blond.vercel.app/ko',
+    linkLabel: '사이트 보기',
+    github: 'https://github.com/jinmo78/my-app-policies',
   },
   {
     title: '금손95 재고관리',
