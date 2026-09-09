@@ -8,7 +8,7 @@ export default function Projects() {
       <SectionHeading
         id="projects"
         label="02 — Projects"
-        title="개인 프로젝트"
+        title="프로젝트"
         description="루미와 PDF OCR로 Agent·RAG를 시작합니다. 그다음이 출시 앱과 웹입니다."
       />
       <ProjectCarousel projects={projects} />
