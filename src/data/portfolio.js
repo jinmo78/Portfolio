@@ -4,11 +4,11 @@ import certPythonData from '../assets/certificates/python-data.jpg'
 
 export const site = {
   name: 'John.K',
-  role: 'AI Agent Developer',
-  identityLead: '웹 서비스를 출시해 온,',
-  identityTail: 'AI Agent 개발자',
+  role: 'AI Service Engineer',
+  identityLead: '웹과 AI를 다루는,',
+  identityTail: 'AI 서비스 엔지니어',
   tagline:
-    '웹 서비스를 출시·운영해 온 개발자가, 국비지원 AI 과정에서 RAG·LangChain·LangGraph Agent를 배우고, 루미(스토어)와 PDF OCR 웹앱(배포)으로 시작합니다.',
+    '웹 서비스를 출시·운영해 왔고, AI 서비스도 다룹니다.',
   email: 'ilovejs97@gmail.com',
   profileImage,
 }
