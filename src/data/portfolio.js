@@ -266,7 +266,7 @@ export const projects = [
     description:
       '맞춤법·어휘를 부저 퀴즈로 겨루는 실시간 멀티플레이 게임. 솔로 연습, 초대 코드 친구 플레이, 실시간 대전을 지원하고 Google 로그인으로 기록을 이어갈 수 있습니다.',
     tech: ['Expo', 'TypeScript', 'Socket.io', 'Fastify'],
-    link: 'https://woorimal-dalin.onrender.com',
+    link: 'https://woorimal.johnk.co.kr/',
   },
   {
     title: '정산 계산기',
