@@ -4,7 +4,7 @@
 
 React + Tailwind CSS 기반의 테크 감성 다크모드 포트폴리오입니다.
 
-- **Live:** https://jinmo78.github.io/Portfolio/
+- **Live:** https://johnk.co.kr/
 - **문서:** [docs/PROJECT.md](docs/PROJECT.md)
 - **변경 이력:** [CHANGELOG.md](CHANGELOG.md)
 
@@ -17,12 +17,15 @@ npm run dev
 
 ## 배포
 
-`main` 브랜치에 push하면 GitHub Actions가 자동으로 GitHub Pages에 배포합니다.
+`main` 브랜치에 push하면 GitHub Actions가 자동으로 GitHub Pages에 배포합니다. 라이브 주소는 **https://johnk.co.kr/** 입니다.
 
 ### 최초 1회 설정
 
 1. [Settings → Pages](https://github.com/jinmo78/Portfolio/settings/pages) → **Source: GitHub Actions**
-2. 저장소가 **Public**이어야 합니다
+2. Custom domain: `johnk.co.kr`
+3. 저장소가 **Public**이어야 합니다
+
+DNS·HTTPS 상세는 [docs/PROJECT.md](docs/PROJECT.md) 배포 섹션을 참고하세요.
 
 ## 기술 스택
 

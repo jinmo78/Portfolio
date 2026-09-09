@@ -9,7 +9,7 @@ John.K 개발자 포트폴리오 웹사이트의 구조, 디자인, 콘텐츠 �
 | **목적** | AI Agent + 웹/앱 출시 포트폴리오 |
 | **기술 스택** | React 19, Vite 8, Tailwind CSS 4 |
 | **배포** | GitHub Pages (GitHub Actions 자동 배포) |
-| **Live URL** | https://jinmo78.github.io/Portfolio/ |
+| **Live URL** | https://johnk.co.kr/ |
 | **저장소** | https://github.com/jinmo78/Portfolio |
 
 ---
@@ -19,7 +19,7 @@ John.K 개발자 포트폴리오 웹사이트의 구조, 디자인, 콘텐츠 �
 ```
 portfolio/
 ├── .github/workflows/deploy.yml   # GitHub Pages 자동 배포
-├── public/                        # 정적 파일 (favicon, 프로필 이미지 등)
+├── public/                        # 정적 파일, CNAME (johnk.co.kr)
 ├── src/
 │   ├── components/
 │   │   ├── layout/
@@ -45,7 +45,7 @@ portfolio/
 │   ├── index.css                  # 글로벌 스타일·테마
 │   └── main.jsx
 ├── index.html
-├── vite.config.js                 # base: '/Portfolio/' (GitHub Pages)
+├── vite.config.js                 # base: '/' (커스텀 도메인)
 └── package.json
 ```
 
@@ -221,10 +221,26 @@ npm run preview    # 빌드 결과 미리보기
 
 1. 저장소가 **Public**이어야 함 (Free 플랜 기준)
 2. Settings → Pages → Source: **GitHub Actions**
+3. Settings → Pages → Custom domain: `johnk.co.kr`
 
 ### Vite base 경로
 
-GitHub Pages 프로젝트 사이트이므로 `vite.config.js`에 `base: '/Portfolio/'`가 설정되어 있습니다.
+커스텀 도메인은 사이트 루트에서 열리므로 `vite.config.js`에 `base: '/'`가 설정되어 있습니다. `public/CNAME` 값은 `johnk.co.kr`입니다.
+
+### 커스텀 도메인 (2026-09-09)
+
+DNS는 카페24(`ns1.hosting.co.kr` 등)에서 관리합니다. `woorimal.johnk.co.kr` 레코드는 건드리지 않습니다.
+
+| 유형 | 호스트 | 값 |
+|------|--------|-----|
+| A | `@` | `185.199.108.153` |
+| A | `@` | `185.199.109.153` |
+| A | `@` | `185.199.110.153` |
+| A | `@` | `185.199.111.153` |
+| CNAME | `www` | `jinmo78.github.io` |
+| A | `woorimal` | (기존 서버, 변경 없음) |
+
+HTTPS는 GitHub Pages Let's Encrypt 인증서가 발급된 뒤 Settings → Pages에서 **Enforce HTTPS**를 켭니다. 기존 `https://jinmo78.github.io/Portfolio/` 는 `https://johnk.co.kr/` 로 리다이렉트됩니다.
 
 ---
 

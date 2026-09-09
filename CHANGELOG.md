@@ -2,6 +2,16 @@
 
 이 프로젝트의 주요 변경 이력입니다.
 
+## [1.7.0] — 2026-09-09
+
+### 배포
+
+- 커스텀 도메인 `https://johnk.co.kr/` 연결 (GitHub Pages)
+- Vite `base`를 `/`로 변경, `public/CNAME` 추가
+- `www`는 apex로 리다이렉트. `woorimal.johnk.co.kr`은 기존 DNS 유지
+
+---
+
 ## [1.6.3] — 2026-09-03
 
 ### 수료증
