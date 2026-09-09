@@ -316,6 +316,6 @@ export const projects = [
     categoryLabel: 'REACT WEBAPP',
     description: 'Tailwind CSS 기반 다크모드 개발자 포트폴리오 웹사이트.',
     tech: ['React', 'Vite', 'Tailwind CSS'],
-    link: 'https://jinmo78.github.io/Portfolio/',
+    link: 'https://johnk.co.kr/',
   },
 ]
